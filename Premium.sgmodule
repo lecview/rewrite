@@ -33,6 +33,9 @@ http-request ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/
 # > 喜马拉雅极速版
 喜马拉雅极速版 = type=http-response, pattern=^https?:\/\/.+ximalaya.com\/(fmobile-user\/homePage|pizza-category\/mypage\/operation)\/, script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/ximalayajisuban.js, requires-body=true, max-size=-1, timeout=60
 
+# > 芒果TV
+芒果TV = type=http-response, pattern=^https?:\/\/.*mgtv.com.*(GetUserInfo|module\/list\?_support|app\/bdboot|pullReleaseInfo|floor\/detail|video\/source|entry\?_support).*$, script-path=https://raw.githubusercontent.com/WeiGiegie/666/refs/heads/main/mgtv.js, requires-body=true, max-size=-1, timeout=60
+
 # > AdBlockPro 终身订阅
 AdBlock = type=http-response, pattern=https:\/\/api\.adblockpro\.app\/verify, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AdBlockPro/JS/AdBlock.js, requires-body=true, max-size=-1, timeout=60
 
