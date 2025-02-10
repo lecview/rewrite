@@ -31,7 +31,7 @@ http-request ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/
 1BlockerProCrack = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/1Blocker/JS/1BlockerProCrack.js, requires-body=true, max-size=-1, timeout=60
 
 # > 喜马拉雅极速版
-AppRaven = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/ximalayajisuban.js, requires-body=true, max-size=-1, timeout=60
+AppRaven = type=http-response, pattern=^https?:\/\/.+ximalaya.com\/(fmobile-user\/homePage|pizza-category\/mypage\/operation)\/, script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/ximalayajisuban.js, requires-body=true, max-size=-1, timeout=60
 
 # > AdBlockPro 终身订阅
 AdBlock = type=http-response, pattern=https:\/\/api\.adblockpro\.app\/verify, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AdBlockPro/JS/AdBlock.js, requires-body=true, max-size=-1, timeout=60
